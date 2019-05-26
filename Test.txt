@@ -1,14 +1,24 @@
 package prototype;
 import java.util.Scanner;
+omport java.util.Arrays;
 public class Prototype {
 public static void main(String[] args) {
 testGitForMe();
+testArrays();
 }
+public static testArrays() {
+int[] cells = new int[5];
+for (int i = 0; i < 10; i++) {
+System.out.println(cells);
+}
+}
+
 public static void testGitForme() {
 System.out.println("Enter your code" + "Welcome to GitHub");
 Scanner scanner = new Scanner(System.in);
 int x = scanner.nextInt();
 System.out.println("Hey");
 }
+
 }
 }
