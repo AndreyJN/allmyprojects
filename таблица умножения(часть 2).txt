@@ -1,0 +1,29 @@
+public class JavaApplicationTabl2 {
+    public static void main(String[] args) {
+        test1();
+    }
+
+    public static void test1() {
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j < 10; j++) {
+                // for (int l = 1; l < 10; l++) {
+                // for (int p = 1; p < 10; p++) {
+
+                int k = i * j;
+                //int r = i * j;
+                //int y = l * p;
+                System.out.printf("%d * %d = %d    \t    %d * %d = %d    \t    %d * %d = %d    \t    %d * %d = %d%n ", i, j, k, i, j, k, i, j, k, i, j, k);
+//                 if (k < 1) {
+//                     k++;
+//                     System.out.println("\t");
+//                 }
+                //System.out.printf("%d * %d = %d \t %d * %d = %d%n ", l, p, y, l, p, y);
+                //  System.out.println("\t" + i * j + "\t" + i * j + "\t" + i * j + "\t" + i * j + "\t");
+                //     System.out.println(i + "\t" + j);
+                // }
+                // }
+            }
+            System.out.println();
+        }
+    }
+}
