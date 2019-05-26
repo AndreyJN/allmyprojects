@@ -1,0 +1,14 @@
+package prototype;
+import java.util.Scanner;
+public class Prototype {
+public static void main(String[] args) {
+testGitForMe();
+}
+public static void testGitForme() {
+System.out.println("Enter your code" + "Welcome to GitHub");
+Scanner scanner = new Scanner(System.in);
+int x = scanner.nextInt();
+System.out.println("Hey");
+}
+}
+}
