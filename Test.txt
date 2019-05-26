@@ -5,6 +5,18 @@ public class Prototype {
 public static void main(String[] args) {
 testGitForMe();
 testArrays();
+testStack();
+}
+public static testStack() {
+char[][] cell = new char[5][5];
+String[][] cellTwo = String[2][2];
+for (int i = 0; i < length.cellTwo; i ++) {
+System.out.println(Arrays.toString(cellTwo));
+}
+for (int i =0; i < length.cell; i++) {
+System.out.println(cell);
+}
+
 }
 public static testArrays() {
 int[] cells = new int[5];
@@ -12,13 +24,11 @@ for (int i = 0; i < 10; i++) {
 System.out.println(cells);
 }
 }
-
 public static void testGitForme() {
 System.out.println("Enter your code" + "Welcome to GitHub");
 Scanner scanner = new Scanner(System.in);
 int x = scanner.nextInt();
 System.out.println("Hey");
 }
-
 }
 }
