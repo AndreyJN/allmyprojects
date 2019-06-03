@@ -1,0 +1,58 @@
+package battleshipmay2;
+import java.util.Scanner;
+//import java.util.Arrays;
+public class BattleShipMay2 {
+    public static void main(String[] args) {
+        doGame();
+    }
+    public static void doGame() {
+        Scanner scanner = new Scanner(System.in);
+        char[] spot = new char[10];
+        //char[] spotTwo = new char[10];
+         
+         for (int i = 0; i < spot.length; i++) {
+              spot[i] = '.';
+                }
+         
+                int shipPositionOne = 2;
+                int shipPositionTwo = 4;
+                int shipPositionThree = 8;
+                spot[shipPositionOne] = 'x';
+                spot[shipPositionTwo] = 'x';
+                spot[shipPositionThree] = 'x';
+                do {
+               System.out.println(spot);
+               //System.out.println(spotTwo);
+               int fire = 0;
+                System.out.println("Your Shot");
+                
+               while (true) {
+                   if (scanner.hasNext()) {
+                       fire = scanner.nextInt();
+                       break;
+                   } else {
+                       String temp = scanner.nextLine();
+                   }
+                   }
+                
+                        switch (spot[fire]) {
+                        case '.':
+                            System.out.println("Miss");
+                            spot[fire] = '*';
+                            break;
+                            case 'x':
+                            System.out.println("Hit");
+                            spot[fire] = '0';
+                            break;
+                            case '*':
+                            System.out.println("Earlier there was a shot on this sector");
+                            spot[fire] = '&';
+                            break;
+                         }
+                    
+                } while(spot[shipPositionOne] == 'x' || spot[shipPositionTwo] == 'x' || spot[shipPositionThree] == 'x');
+                    System.out.println(spot);
+                
+         }
+}
+
