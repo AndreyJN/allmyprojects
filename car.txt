@@ -1,0 +1,79 @@
+import java.util.Scanner;
+public class Mashine {
+    public static void main(String[] args) {
+
+        Car mersedes = new Car();
+        Car jaguar = new Car();
+        mersedes.sportName = "AmG";
+        jaguar.sportName = "jx";
+        mersedes.speed = 300;
+        jaguar.speed = 280;
+        mersedes.hm = 500;
+        jaguar.hm = 480;
+        mersedes.start = 3.4;
+        jaguar.start = 3.2;
+
+        if (mersedes.start > jaguar.start || mersedes.speed > jaguar.speed || mersedes.hm > jaguar.hm) {
+            System.out.println("Mersedes fast");
+        } else {
+            System.out.println("Jaguar fast");
+        }
+
+        char[] deff = new char[10];
+            for (int i = 0; deff.length < 4 ; i++) {
+            deff[i] = '.';
+            System.out.println(deff);
+        }
+
+        final int harry = 320;
+        Main skoda = new Main();
+        skoda.name = "Rapide";
+        skoda.speed = 180;
+        skoda.hm = harry;
+        skoda.start = 9.8;
+
+        Main mazda = new Main();
+        mazda.name = "3mpc";
+        mazda.speed = 220;
+        mazda.hm = harry;
+        mazda.start = 9.7;
+
+        Main honda = new Main();
+        honda.name = "Accord";
+        honda.speed = 260;
+        honda.hm = 380;
+        honda.start = 8.1;
+
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+
+        if (x >= 5) {
+            final int hol = x;
+            System.out.println("x++");
+        } else {
+            final int holTwo = x++;
+            System.out.println("x--");
+        }
+
+        if (skoda.start > mazda.start & skoda.start > honda.start) {
+            System.out.println("Skoda Fast on start");
+        } else {
+            System.out.println("Or mazda....or honda");
+        }
+
+        if (skoda.speed > mazda.speed) {
+            System.out.println("Skoda fast");
+        } else {
+            System.out.println("Mazda fast");
+        }
+
+        if (mazda.speed > honda.speed) {
+            System.out.println("Mazda fast");
+        } else {
+            System.out.println("Honda fast");
+        }
+
+    }
+
+
+}
