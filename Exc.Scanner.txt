@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main5 {
+    public static void scr () {
+        Scanner scanner = new Scanner(System.in);
+        final int SIZE = 10;
+        int[] ints = new int[SIZE];
+
+        for (int i = 0; i < SIZE; i++) {
+            System.out.println("Введите числа");
+            //int temp = scanner.nextInt();
+            ints[i] = scanner.nextInt();
+
+        }
+        for (int i = 0; i < SIZE ; i++) {
+            for (int j = i + 1; j < SIZE ; j++) {
+                    if (ints[i] > ints[j]) {
+                        int temp = ints[i];
+                        ints[i] = ints[j];
+                        ints[j] = temp;
+                    }
+            }
+        }
+
+        System.out.println("Выводим массив");
+        for (int elem : ints) {
+            System.out.println(elem + " ");
+        }
+        System.out.println("");
+    }
+}
+
+
