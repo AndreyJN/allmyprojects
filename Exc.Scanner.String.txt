@@ -1,0 +1,26 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class Main3 {
+    public static void goes() {
+        System.out.println("Enter values/words/offers");
+        Scanner scanner = new Scanner(System.in);
+        String temp = scanner.nextLine();
+        Scanner scannerTwo = new Scanner(System.in);
+        Integer tempTwo = scannerTwo.nextInt();
+
+        if (tempTwo <= 5) {
+            System.out.println("The entered values are true");
+        } else {
+            System.out.println("Alas, the entered values do not hit the mark");
+        }
+
+        if (temp.equals("Andrew is a most popular programmist in Germany") || temp.equals("Andrew! Yeah!")) {
+            System.out.println("The entered values are true");
+        } else {
+            System.out.println("The entered values are incorrect");
+        }
+
+
+    }
+}
